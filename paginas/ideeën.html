@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Werkwijzer - Ideeën</title>
+    <link rel="stylesheet" href="../css/collegas.css">
+    <link rel="icon" href="/Favicons/favicon.ico" type="image/x-icon">
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+    <script>
+        const SUPABASE_URL = "https://xknvtzvyuqvbjejmuhcr.supabase.co";
+        const SUPABASE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InhrbnZ0enZ5dXF2Ymplam11aGNyIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MzM4MjAzODgsImV4cCI6MjA0OTM5NjM4OH0.qf8Lk9hufJR35nxKVOtOPZQ3vfB1zSuQ2KIv53b5Y80";
+        window.supabase = supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
+        window.medewerker = "ideeeën";
+    </script>
+    <script src="../js/scripts.js" defer></script>
+</head>
+<body>
+    <a href="javascript:history.back()" class="back-arrow">&larr; Terug</a>
+    <section class="heading__section">
+        <h1>Ideeën</h1>
+    </section>
+    <section class="todo__section">
+        <h2>Alle Ideeën</h2>
+        <form id="todoForm">
+            <input type="text" id="todoInput" placeholder="Voer hier jouw taak in" required>
+            <button type="submit">Toevoegen</button>
+        </form>
+        <ul id="todoList"></ul>
+    </section>
+</body>
+</html>

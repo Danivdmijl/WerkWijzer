@@ -1,0 +1,58 @@
+*, *::after, *::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+html {
+    font-size: 62.5%;
+  }
+  
+body {
+    font-size: 2rem;
+    background: #0B2447;
+  }
+  
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+.a-no-style {
+    text-decoration: none; 
+    color: inherit; 
+}
+
+.selectCards__container {
+    width: 70%;
+    height: 100%;
+    background: #19376D;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+    padding: 9rem;
+}
+
+.selectCards {
+    width: 40rem;
+    height: 30rem;
+    background: #bccacc;
+    border: 7px solid #0B2447;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #0B2447;
+}
+
+.selectCards:hover {
+    cursor: pointer;
+    transform:scale(1.035);
+    color: #30507c;
+}
