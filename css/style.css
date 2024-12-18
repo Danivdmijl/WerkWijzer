@@ -49,10 +49,41 @@ body {
     justify-content: center;
     align-items: center;
     color: #0B2447;
+    text-align: center;
 }
 
 .selectCards:hover {
     cursor: pointer;
     transform:scale(1.035);
     color: #30507c;
+}
+
+@media (max-width: 1444px) {
+  .selectCards__container {
+    margin-top: 5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .selectCards {
+    width: 25rem;
+    height: 20rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .selectCards__container {
+    background: transparent;
+    margin-top: 0px;
+  }
+}
+
+@media (max-width: 380px) {
+  .selectCards {
+    width: 15rem;
+    height: 13.5rem;
+    font-size: 12px;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
 }
