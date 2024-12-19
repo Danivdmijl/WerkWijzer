@@ -209,11 +209,17 @@ body:not(#__) .voltooid {
 
 @media (hover: none) and (pointer: coarse) {
   .touch-only {
-      display: inline;
-      background: transparent;
-      border: none;
-      color:#30507c;
-      font-size: 2rem;
+    display: inline;
+    background: transparent;
+    border: none;
+    color: #30507c;
+    font-size: 2rem;
+    transition: all 0.1s;
+  }
+
+  .touch-only:active {
+    transform: scale(1.1);
+    color: #6084b6;
   }
 
   .completed .touch-only {
