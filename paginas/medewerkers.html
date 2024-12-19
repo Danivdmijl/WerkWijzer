@@ -1,15 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WerkWijzer - Medewerkers</title>
-    <link rel="stylesheet" href="../css/paginas.css" />
-    <link rel="icon" href="../Favicons/favicon.ico" type="image/x-icon">
-    <script src="../js/script.js"></script>
-  </head>
-  <body>
-    <a href="javascript:history.back()" class="back-arrow">&larr; Terug</a>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Werkwijzer - Ideeën</title>
+    <link rel="stylesheet" href="../css/paginas.css">
+    <link rel="icon" href="/Favicons/favicon.ico" type="image/x-icon">
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+    <script>
+        const SUPABASE_URL = "https://xknvtzvyuqvbjejmuhcr.supabase.co";
+        const SUPABASE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InhrbnZ0enZ5dXF2Ymplam11aGNyIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MzM4MjAzODgsImV4cCI6MjA0OTM5NjM4OH0.qf8Lk9hufJR35nxKVOtOPZQ3vfB1zSuQ2KIv53b5Y80";
+        window.supabase = supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
+    </script>
+    <script src="../js/scripts.js" defer></script>
+</head>
+<body>
+    <a href="#" class="back-arrow" id="backButton">&larr; Terug</a>
     <div class="card-container">
       <a class="a-no-style" href="../medewerkers/dani.html">
         <article class="selectCards">
@@ -21,6 +27,5 @@
           <h2 class="selectCardsTitle">Ian</h2>
         </article>
       </a>
-    </div>
   </body>
 </html>

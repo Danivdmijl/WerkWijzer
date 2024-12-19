@@ -1,3 +1,5 @@
+console.log("test voor de js");
+
 document.addEventListener("DOMContentLoaded", async () => {
   const todoForm = document.getElementById("todoForm");
   const todoInput = document.getElementById("todoInput");
@@ -23,6 +25,21 @@ document.addEventListener("DOMContentLoaded", async () => {
           todoList.appendChild(li);
       });
   }
+
+  // De terug button
+  document.getElementById('backButton').addEventListener('click', (event) => {
+    event.preventDefault();
+
+    const referrer = document.referrer;
+    const isInternalReferrer = referrer && referrer.includes(window.location.hostname);
+
+    if (isInternalReferrer) {
+        history.back();
+    } else {
+        window.location.href = '/index.html';
+    }
+});
+
 
   // De functie zodra je een taak toevoegt aan het formulier
   todoForm.addEventListener("submit", async (e) => {
